@@ -1,7 +1,7 @@
 iso8601
 =======
 
-![build status](https://secure.travis-ci.org/calmh/node-iso8601.png)](http://travis-ci.org/calmh/node-iso8601)
+[![build status](https://secure.travis-ci.org/calmh/node-iso8601.png)](http://travis-ci.org/calmh/node-iso8601)
 
     var iso8601 = require('iso8601');
     var fromIso8601 = iso8601.fromIso8601;
