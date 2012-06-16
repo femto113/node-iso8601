@@ -10,3 +10,8 @@ iso8601
     
     iso8601.toDate('2012-01-02T02:33:44Z'); // => new Date(1325471624000)
 
+License
+-------
+
+2-Clause BSD
+
