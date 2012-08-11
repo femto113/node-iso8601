@@ -2,7 +2,7 @@
   "author": "Jakob Borg <jakob@nym.se> (http://nym.se/)",
   "name": "iso8601",
   "description": "Parse and print ISO8601 dates",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/calmh/node-iso8601",
   "repository": {
     "type": "git",
