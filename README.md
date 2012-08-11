@@ -13,5 +13,5 @@ iso8601
 License
 -------
 
-2-Clause BSD
+MIT
 
