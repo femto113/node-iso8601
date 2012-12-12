@@ -15,5 +15,17 @@ describe('The ISO8601 library', function () {
         var d = new Date(1325471624000);
         iso8601.toDate('2012-01-02T02:33:44Z').should.equal(d);
     });
+
+    it('handles time zone offsets', function() {
+        var inUtcPlusOne = iso8601.toDate('2012-12-12T08:00:00+01:00');
+        var inUtcPlusTwo = iso8601.toDate('2012-12-12T09:00:00+02:00');
+        inUtcPlusOne.getTime().should.equal(inUtcPlusTwo.getTime());
+    });
+
+    it('handles minutes in time zone offsets', function() {
+        var inUtcPlusOne = iso8601.toDate('2012-04-09T08:00:00Z');
+        var inUtcPlusTwo = iso8601.toDate('2012-04-09T05:30:00-02:30');
+        inUtcPlusOne.getTime().should.equal(inUtcPlusTwo.getTime());
+    });
 });
 
